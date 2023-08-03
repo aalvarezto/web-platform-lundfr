@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <button onclick="sumar();">Sumar</button>
+
+    <br />
+    <br />
+
+    <button onclick="preguntar('cómo te llamás?', 'Hola');">Preguntar</button>
+    <button onclick="preguntar('what\'s your name?', 'Hello');">Ask</button>
+
+    <script>
+      function sumar() {
+        const a = prompt('ingrese el primer número:');
+        const b = prompt('ingrese el segundo número:');
+
+        const resultado = Number(a) + Number(b);
+
+        alert('la suma es: ' + resultado);
+      }
+
+      function preguntar(pregunta, respuesta) {
+        const nombre = prompt(pregunta);
+
+        alert(respuesta + ' ' + nombre + '!');
+      }
+    </script>
+  </body>
+</html>
